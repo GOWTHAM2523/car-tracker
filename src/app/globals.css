@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  padding: 10px;
+}
+
+.date-seleted {
+  height: 80vh;
+  width: 25%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.light .date-seleted {
+  background-color: gray;  
+  /* color: white; */
+}
+
+.dark .date-seleted {
+  background-color: white;  
+  color: black;
+}
+
+.map-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 80%;
+  border-radius: 10px;
+  
+}
+
+
+.light .map-wrapper {
+  background-color: gray;  
+  color: white;
+}
+
+.dark .map-wrapper {
+  background-color: white;  
+  color: black;
+}
+
+
+.map {
+  height: 300px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.light .map {
+  background-color: gray;  
+  color: white;
+}
+
+.dark .map {
+  background-color: white;  
+  color: black;
+}
+
+
+.info {
+  display: flex;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-top: 25px;
+}
+
+
+.light .info {
+  background-color: gray;  
+  color: white;
+}
+
+.dark .info {
+  background-color: white;  
+  color: black;
+}
+
+
+.light .map-icon {
+  background-color: gray;  
+  color: white;
+}
+
+.dark .map-icon {
+  background-color: white;  
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.rotating-icon img {
+  transition: transform 0.2s linear;
+}
